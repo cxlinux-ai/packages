@@ -1,0 +1,7 @@
+Origin: CX Linux
+Label: CX Linux
+Suite: stable
+Codename: stable
+Architectures: amd64 arm64
+Components: main
+Description: CX Linux Package Repository
