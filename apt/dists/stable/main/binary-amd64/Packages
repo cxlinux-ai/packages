@@ -1,0 +1,17 @@
+Package: cx-terminal
+Version: 0.2.0
+Architecture: amd64
+Maintainer: CX Linux <packages@cxlinux.com>
+Installed-Size: 120000
+Depends: libc6, libfontconfig1, libfreetype6, libxcb1, libxkbcommon0
+Filename: pool/main/c/cx-terminal/cx-terminal_0.2.0_amd64.deb
+Size: 39791496
+MD5sum: 9bad8575d58d7acf13e391ebe0269a0e
+SHA256: d767f1f651fc44032b22b8ec7af4229a311abadcb38535c7a9d5776ce0183463
+Section: utils
+Priority: optional
+Homepage: https://cxlinux.com
+Description: CX Terminal - AI-powered terminal emulator
+ CX Terminal is an AI-powered terminal emulator with natural language
+ command assistance, system health checks, and interactive demo mode.
+ Based on WezTerm, enhanced with Claude/OpenAI integration.

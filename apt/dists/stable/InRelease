@@ -1,0 +1,34 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: CX Linux
+Label: CX Linux
+Suite: stable
+Codename: stable
+Version: 0.2.0
+Architectures: amd64
+Components: main
+Description: CX Linux Package Repository
+Date: Tue, 17 Feb 2026 20:55:34 +0700
+MD5Sum:
+ 467baf6254dde10c767aac40412d1874 703 main/binary-amd64/Packages
+ 69a87cdc9aadc7d4e0f013a8a59cc886 482 main/binary-amd64/Packages.gz
+SHA256:
+ 814404040723d461db5626fbf211bfb445f93f11871215ec2195900f41150f0d 703 main/binary-amd64/Packages
+ 7cd4b44382edbbd71b516abc7979112a727e6c8d1b7e131c9a7b666dda32cc8f 482 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEOCnX9tFKRSXm+KhrPr/4FcEtAbcFAmmUc1wACgkQPr/4FcEt
+AbeTHw/+JHAhQUZVFva90VENoDfguAIbhIFwruDxt7jiBx3yLyh1sYhLCLP10Tpd
+EUsIOoqbSULFQx8S5vSlvtuzlWKw4nY9bYlMqWge2cwWsPvv40QadKqmmxICvwTM
+cG6ge4iyywM+BAYDP+dhDbbdfUu5AsXbQKzxNm+9U73jV+Eone8bFiQLc2IhshPA
+kbz9J0A5GFJJEf345Ur25KVwTjjB+1iIz98Kb+HEXPriHxN8ZXZUxInC9Y9rrPkL
+/qMejL6omgAlaoDTA4pJhZKDHHAXki6bgTuFBrDMAULa10Kzu4t52iVh4+qbCfL8
+Hcq4u61EsrUnz0418CKJo31Ol0XQ7IeD/Zrz53/dpnPV3oVMRmbwVkUKsfixwsSo
+jvx1iQNcwqgp9CWKtHdcxokpFSWK8gZ3nYzOXW2pa8JDW//JsCUOEOEjagVxr647
+CEnilocJw+SSSFcptw7c7EIP5vCIMyD7UN467uWwJVHpYjAujSifn2HlANsDYtil
+VTG9fnGTL+QUkazl4O7dFcsDSZ7raUHMEO4aqFtGiCYUkVivhqhFsizwNojiZ+Ag
+Sk/OBWcfgE7R0wyuuNWQk79e2HmDcUkg+lGe/ntSKaGZSU61AxqEEWzK8GOHK/B2
+3M8MC62k+O5rh+0vvrc9oDJ1AhiQDttHNU6NMTATFfwJfpR7/qQ=
+=xVFL
+-----END PGP SIGNATURE-----
