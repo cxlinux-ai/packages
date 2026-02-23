@@ -3,7 +3,7 @@ Version: 0.3.2
 Architecture: amd64
 Maintainer: CX Linux <packages@cxlinux.com>
 Installed-Size: 120000
-Depends: libc6 (>= 2.34), libfontconfig1, libfreetype6, libxcb1, libxkbcommon0, libxcb-image0, libxcb-keysyms1, libxcb-render0, libxcb-shape0, libxcb-xfixes0, libxkbcommon-x11-0, libegl1, libwayland-client0, libwayland-egl1
+Depends: libc6 (>= 2.34), libfontconfig1, libfreetype6, libxcb1, libxkbcommon0, libxcb-image0, libxcb-keysyms1, libxcb-render0, libxcb-shape0, libxcb-xfixes0, libxkbcommon-x11-0, libegl1, libwayland-client0, libwayland-egl1, libgomp1
 Filename: pool/main/c/cx-terminal/cx-terminal_0.3.2_amd64.deb
 Size: 40815670
 MD5sum: c832fea61e8634afa5b79c95e2d6137c

@@ -5,10 +5,10 @@ Codename: stable
 Architectures: amd64
 Components: main
 Description: CX Linux APT Repository
-Date: Mon, 23 Feb 2026 08:55:49 +0000
+Date: Mon, 23 Feb 2026 09:00:26 +0000
 MD5Sum:
- 3934f7557e185af24532de67e2f6e2a0 866 main/binary-amd64/Packages
- ffd4f9ea197039122ee02b15f678bdd7 540 main/binary-amd64/Packages.gz
+ 92a798e65c773860ddeb561ee35d99cd 876 main/binary-amd64/Packages
+ 9a61371a70eb60fca93e04acaf0acf75 543 main/binary-amd64/Packages.gz
 SHA256:
- 75db273b9ffcb774ac55798ebd54143924ec7d8fef05eb3d92289803bd511734 866 main/binary-amd64/Packages
- 2d1c226bb60194ad972a0e2bd95a4be5ad668b1d1fa2afae1b17c857255d12c4 540 main/binary-amd64/Packages.gz
+ d42317d5ecf85f01c75e017f178e6280960f44eb9bb7c3bbdaa84706628b48df 876 main/binary-amd64/Packages
+ 990145593c234bf5cd8edf37041ad63ce5ca4aa1f2039d1a0e00c11df35a428a 543 main/binary-amd64/Packages.gz
