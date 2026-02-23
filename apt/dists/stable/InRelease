@@ -5,30 +5,29 @@ Origin: CX Linux
 Label: CX Linux
 Suite: stable
 Codename: stable
-Version: 0.2.0
 Architectures: amd64
 Components: main
-Description: CX Linux Package Repository
-Date: Tue, 17 Feb 2026 20:55:34 +0700
+Description: CX Linux APT Repository
+Date: Mon, 23 Feb 2026 08:55:49 +0000
 MD5Sum:
- 467baf6254dde10c767aac40412d1874 703 main/binary-amd64/Packages
- 69a87cdc9aadc7d4e0f013a8a59cc886 482 main/binary-amd64/Packages.gz
+ 3934f7557e185af24532de67e2f6e2a0 866 main/binary-amd64/Packages
+ ffd4f9ea197039122ee02b15f678bdd7 540 main/binary-amd64/Packages.gz
 SHA256:
- 814404040723d461db5626fbf211bfb445f93f11871215ec2195900f41150f0d 703 main/binary-amd64/Packages
- 7cd4b44382edbbd71b516abc7979112a727e6c8d1b7e131c9a7b666dda32cc8f 482 main/binary-amd64/Packages.gz
+ 75db273b9ffcb774ac55798ebd54143924ec7d8fef05eb3d92289803bd511734 866 main/binary-amd64/Packages
+ 2d1c226bb60194ad972a0e2bd95a4be5ad668b1d1fa2afae1b17c857255d12c4 540 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOCnX9tFKRSXm+KhrPr/4FcEtAbcFAmmUc1wACgkQPr/4FcEt
-AbeTHw/+JHAhQUZVFva90VENoDfguAIbhIFwruDxt7jiBx3yLyh1sYhLCLP10Tpd
-EUsIOoqbSULFQx8S5vSlvtuzlWKw4nY9bYlMqWge2cwWsPvv40QadKqmmxICvwTM
-cG6ge4iyywM+BAYDP+dhDbbdfUu5AsXbQKzxNm+9U73jV+Eone8bFiQLc2IhshPA
-kbz9J0A5GFJJEf345Ur25KVwTjjB+1iIz98Kb+HEXPriHxN8ZXZUxInC9Y9rrPkL
-/qMejL6omgAlaoDTA4pJhZKDHHAXki6bgTuFBrDMAULa10Kzu4t52iVh4+qbCfL8
-Hcq4u61EsrUnz0418CKJo31Ol0XQ7IeD/Zrz53/dpnPV3oVMRmbwVkUKsfixwsSo
-jvx1iQNcwqgp9CWKtHdcxokpFSWK8gZ3nYzOXW2pa8JDW//JsCUOEOEjagVxr647
-CEnilocJw+SSSFcptw7c7EIP5vCIMyD7UN467uWwJVHpYjAujSifn2HlANsDYtil
-VTG9fnGTL+QUkazl4O7dFcsDSZ7raUHMEO4aqFtGiCYUkVivhqhFsizwNojiZ+Ag
-Sk/OBWcfgE7R0wyuuNWQk79e2HmDcUkg+lGe/ntSKaGZSU61AxqEEWzK8GOHK/B2
-3M8MC62k+O5rh+0vvrc9oDJ1AhiQDttHNU6NMTATFfwJfpR7/qQ=
-=xVFL
+iQIzBAEBCAAdFiEEOCnX9tFKRSXm+KhrPr/4FcEtAbcFAmmcFiwACgkQPr/4FcEt
+Abchng//VR2HcmjpkQ6dyNiMMu7HunNfRPhlQpw4paKsMrgDFp7Z+W/EgWYKJvsO
+wZJ2rPoq1KCP5rq8M+j3lIf7CjfLppReldpqD+xjZzRJmfEonDJsh9h1ZCQkLQOM
+9gEsReBXv2g3CRUZsxuAoPAORz3XPE02G6na11jvPMP/cRSOPkLgkE7VQKR7R2mZ
+6JcsIGbpGQZx03tekTBCHKQKTk/BTbYk6DOqgIoIrrg3uN0S50BNNq1i/4NRW2FI
+ny4seXYDz17Z0MtJ4hJ/+7JvgB6DAuPP7A6Q/RjldOrOh69bWsNh7ArJR5bdaOn6
+aUliweQrBtO3EpZzbhvV0C71dWA4YgLzu349CwkAeAbHpSCxOu/3Ymnl1gyx+TFw
+1vCPJ5/rMMPl2IhGryc76DZQ5P/tWu4c3IRNlZoQIC9g70sIvaL/Azqfl6dO+PWa
+TVNc65ZtbnqV2i+D/iY+Swzfd3Wk+DxhOXON18rkojavFTY8dwgDcSS4dTb1wHmf
+v9JfenBpm6Tn3o+0xuopxdPC6ihTjyDJetiX+13AzuVamRAoqJYjr1h+WLDbl071
+syUTHsmG4Vfkz6gDrQzbTanAVixrrgG/3IlSbT1iP4Pb5DgR9Nd7QyN1Gf6EVf1W
+CZGoocKaOI9KzhEg5gu1TzwOLxMfTIWC05Wnto1V7EkynskrcPA=
+=EPFQ
 -----END PGP SIGNATURE-----
