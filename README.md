@@ -18,9 +18,7 @@ sudo apt install cx-terminal
 
 ## Available Packages
 
-- `cx-terminal` - CX Terminal emulator
-- `cx-terminal-nightly` - Nightly builds
-- `cx-core` - Core CX Linux components
+- `cx-terminal` - CX Terminal emulator with AI features
 
 ## Verify GPG Key
 
