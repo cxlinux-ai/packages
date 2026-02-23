@@ -1,0 +1,94 @@
+# Auto-update APT repo when cx-core releases new builds
+# Triggered by repository_dispatch from cx-core CI
+
+name: Update APT Repository
+
+on:
+  repository_dispatch:
+    types: [update-apt]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag to download from (e.g., nightly, 20260223-145346-e97bbc7b)'
+        required: true
+        default: 'nightly'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download latest deb from cx-core
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RELEASE_TAG="${{ github.event.client_payload.release_tag || github.event.inputs.release_tag }}"
+          echo "Downloading from release: $RELEASE_TAG"
+          
+          # Download Ubuntu 24.04 deb (primary)
+          gh release download "$RELEASE_TAG" \
+            --repo cxlinux-ai/cx-core \
+            --pattern "cx-terminal-*.Ubuntu24.04.deb" \
+            --dir apt/pool/main/c/cx-terminal/ \
+            --clobber
+          
+          # Rename to standard format
+          cd apt/pool/main/c/cx-terminal
+          mv cx-terminal-*.Ubuntu24.04.deb cx-terminal_latest_amd64.deb || true
+
+      - name: Generate Packages file
+        run: |
+          cd apt
+          dpkg-scanpackages pool/main > dists/stable/main/binary-amd64/Packages
+          gzip -k -f dists/stable/main/binary-amd64/Packages
+
+      - name: Generate Release file
+        run: |
+          cd apt/dists/stable
+          cat > Release << EOF
+          Origin: CX Linux
+          Label: CX Linux
+          Suite: stable
+          Codename: stable
+          Architectures: amd64
+          Components: main
+          Description: CX Linux APT Repository
+          Date: $(date -u '+%a, %d %b %Y %H:%M:%S +0000')
+          EOF
+          
+          echo "MD5Sum:" >> Release
+          for f in main/binary-amd64/Packages main/binary-amd64/Packages.gz; do
+            size=$(wc -c < "$f" | tr -d ' ')
+            hash=$(md5sum "$f" | awk '{print $1}')
+            echo " $hash $size $f" >> Release
+          done
+          
+          echo "SHA256:" >> Release
+          for f in main/binary-amd64/Packages main/binary-amd64/Packages.gz; do
+            size=$(wc -c < "$f" | tr -d ' ')
+            hash=$(sha256sum "$f" | awk '{print $1}')
+            echo " $hash $size $f" >> Release
+          done
+
+      - name: Import GPG key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+
+      - name: Sign Release
+        run: |
+          cd apt/dists/stable
+          rm -f Release.gpg InRelease
+          gpg --batch --pinentry-mode loopback -abs -o Release.gpg Release
+          gpg --batch --pinentry-mode loopback --clearsign -o InRelease Release
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: auto-update APT repository"
+          git push
