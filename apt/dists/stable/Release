@@ -2,14 +2,13 @@ Origin: CX Linux
 Label: CX Linux
 Suite: stable
 Codename: stable
-Version: 0.2.0
 Architectures: amd64
 Components: main
-Description: CX Linux Package Repository
-Date: Tue, 17 Feb 2026 20:55:34 +0700
+Description: CX Linux APT Repository
+Date: Mon, 23 Feb 2026 15:23:56 +0700
 MD5Sum:
- 467baf6254dde10c767aac40412d1874 703 main/binary-amd64/Packages
- 69a87cdc9aadc7d4e0f013a8a59cc886 482 main/binary-amd64/Packages.gz
+ 3934f7557e185af24532de67e2f6e2a0 866 main/binary-amd64/Packages
+ ffd4f9ea197039122ee02b15f678bdd7 540 main/binary-amd64/Packages.gz
 SHA256:
- 814404040723d461db5626fbf211bfb445f93f11871215ec2195900f41150f0d 703 main/binary-amd64/Packages
- 7cd4b44382edbbd71b516abc7979112a727e6c8d1b7e131c9a7b666dda32cc8f 482 main/binary-amd64/Packages.gz
+ 75db273b9ffcb774ac55798ebd54143924ec7d8fef05eb3d92289803bd511734 866 main/binary-amd64/Packages
+ 2d1c226bb60194ad972a0e2bd95a4be5ad668b1d1fa2afae1b17c857255d12c4 540 main/binary-amd64/Packages.gz
