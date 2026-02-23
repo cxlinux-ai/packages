@@ -18,3 +18,23 @@ Description: CX Terminal - AI-powered terminal emulator
  command assistance, subscription-based features, and modern terminal
  capabilities including fonts with ligatures, hyperlinks, and tabs.
 
+Package: cx-terminal-nightly
+Version: 20260223-190713-46623d41
+Architecture: amd64
+Maintainer: CX Linux <packages@cxlinux.com>
+Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libgomp1 (>= 4.9), libssl3t64 (>= 3.0.0), libstdc++6 (>= 11), libwayland-client0 (>= 1.11.0), libwayland-egl1 (>= 1.15.0), libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb-image0 (>= 0.2.1), libxcb-util1 (>= 0.4.0), libxcb1 (>= 1.11.1), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.6.1), zlib1g (>= 1:1.1.4)
+Conflicts: cx-terminal
+Provides: x-terminal-emulator
+Filename: pool/main/c/cx-terminal/cx-terminal_latest_amd64.deb
+Size: 40823824
+MD5sum: 82e42cce516e621917848d9c4b8c4be9
+SHA1: d3e35f02ca904c7603b7ea2fdd24166a87da9068
+SHA256: 368a3f8920f24fd00a5eb45d6572fac5894c4ef73cbe682b5951974d6d3f3e9f
+Section: utils
+Priority: optional
+Homepage: https://cxlinux.com
+Description: CX Terminal - AI-powered terminal emulator
+ CX Terminal is an AI-powered terminal emulator with natural language
+ command assistance, subscription-based features, and modern terminal
+ capabilities including fonts with ligatures, hyperlinks, and tabs.
+
